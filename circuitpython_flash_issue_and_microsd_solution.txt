@@ -1,0 +1,28 @@
+Issue with Writing to Flash in CircuitPython:
+---------------------------------------------
+
+When using CircuitPython on devices like the Raspberry Pi Pico W, the internal flash storage is exposed to the host computer as a USB mass storage device (CIRCUITPY drive). This allows users to easily drag and drop files, edit code, and store data.
+
+However, writing to this internal flash filesystem from your CircuitPython code (e.g., saving Wi-Fi credentials or logs) can cause issues if the host computer is also accessing the drive at the same time. This concurrent access can lead to filesystem corruption, unexpected behavior, or failed writes.
+
+This is particularly relevant when the device is acting as a USB HID or storage device while also trying to save configuration data during runtime.
+
+Why Using a microSD Card Helps:
+-------------------------------
+
+1. **Isolated Storage**:
+   A microSD card is not exposed to the host computer unless explicitly shared. This means your CircuitPython code can read and write to it without interference from the PC.
+
+2. **No Remounting Needed**:
+   You don't need to remount the filesystem or toggle read-only settings to safely write to a microSD card. It's fully under your code's control.
+
+3. **Safe for Persistent Data**:
+   microSD cards are ideal for storing configuration files like Wi-Fi credentials, logs, timezones, or user settings. These can be written and read reliably, even during normal operation.
+
+4. **More Storage Space**:
+   microSD cards typically provide more space than internal flash, which can be beneficial if you later decide to log data or store more complex settings.
+
+Conclusion:
+-----------
+
+Switching to microSD for configuration storage is a robust solution that avoids conflicts with USB file access and ensures a more reliable, user-friendly experience—especially important when building a plug-and-play device for less technical users.
