@@ -1,0 +1,19 @@
+# CircuitPython specific
+.Trashes
+.metadata_never_index
+.fseventsd/
+boot_out.txt
+
+# Sensitive configuration files
+settings.toml
+settings.json
+
+# Bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editor files
+.vscode/
+*.swp
+.DS_Store

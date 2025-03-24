@@ -1,0 +1,15 @@
+CIRCUITPY_WIFI_SSID = "your_wifi_ssid_here"
+CIRCUITPY_WIFI_PASSWORD = "your_wifi_password_here"
+
+# Time settings
+TIMEZONE = "America/New_York"
+DST = true
+
+# Weather API settings
+# Get your API key from https://openweathermap.org/api
+WEATHER_API_KEY = "your_api_key_here"
+WEATHER_CITY = "New York"  # Your city for weather reports
+WEATHER_UNITS = "imperial"  # "metric" for Celsius, "imperial" for Fahrenheit
+
+# Device settings
+SETTINGS_MODE = false

@@ -1,0 +1,20 @@
+{
+  "TIMEZONE": "America/New_York",
+  "DST": true,
+  "NTP_SERVERS": ["pool.ntp.org", "time.google.com"],
+  "NTP_SYNC_INTERVAL": 86400,
+  "NTP_SYNC_ON_STARTUP": true,
+  "NTP_SYNC_RETRY_INTERVAL": 300,
+  "SHOW_MIC_STATE_DURATION": 2.0,
+  "DISPLAY_ROTATION_INTERVAL": 10,
+  "DISPLAY_ROTATION_ENABLED": true,
+  "MIC_SHORTCUT": ["LEFT_CONTROL", "LEFT_SHIFT", "M"],
+  "WEATHER_API_KEY": "your_api_key_here",
+  "WEATHER_CITY": "New York",
+  "WEATHER_UNITS": "imperial",
+  "WEATHER_FETCH_INTERVAL": 1800,
+  "WEATHER_ENABLED": true,
+  "WIFI_SSID": "your_wifi_ssid_here",
+  "WIFI_PASSWORD": "your_wifi_password_here",
+  "SETTINGS_MODE": false
+}
